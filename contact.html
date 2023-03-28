@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+    <p>It is used to collect user input.This user input goes to server.</p>
+    <h3>Form element</h3>
+    <p>It  acts as container for input elements(text field , radio button , checkbox , submit button</p>
+    <h3>Input element</h3>
+    <p>It is used with help of  type attributes(text , radio ,checkbox , submit , button)</p>
+    <h3>Name attribute</h3>
+    <p>It is used to reference the form-data after submitting the form or to reference the element </p>
+    <h3>Label element</h3>
+    <p>It defines label for elements</p>
+    <h3>Action element</h3>
+    <p>The action attribute defines the action to be performed when the form is submitted.
+        Usually, the form data is sent to a file on the server when the user clicks on the submit button.
+        </p>
+    <form action ="mailto:khushu.2509.singh@gmail.com" autocomplete="on">
+        <fieldset>
+            <legend>Signup</legend>
+        <label for ="fn">First Name : </label>
+        <input type="text" placeholder ="Enter your name"><br>
+        <label for ="email">Email Address: </label>
+        <input type="email" placeholder ="Enter your  email"><br>
+        <label for ="pass">Password: </label>
+        <input type="password" placeholder ="Enter your  password"><br>
+        <label for ="age">Enter your age : </label>
+        <input type="number" placeholder ="Enter your  age"><br>
+        <label>Select your Gender<label>
+            <label><input type="radio" name="status" id="1">Male</label>
+            <label><input type="radio" name="status" id="2">Female </label><br>    
+            <label>Select your interest</label>
+            <select>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>Bootstrap</option>
+                <option>Javascript</option>
+            </select><br>
+            <label>Enter D.O.B</label>
+            <input type= "date"><br>
+            <label>Upload your ID</label>
+            <input type= "file"><br>
+            <label>Reset</label>
+            <input type="reset" /><br>
+            <label>Enter time</label>
+            <input type="time" /><br>
+            <label>Enter URL</label>
+            <input type="url" /><br>
+            <label>Enter week</label>
+            <input type="week" /><br>
+            <label>Search</label>
+            <input type="search" /><br>
+            <label>Range our website</label><br>
+            <input type="range" /><br>
+            <label>Select your country</label>
+            <input list="country">
+        <datalist id="country">
+          <option value="India">
+          <option value="Pakistan">
+          <option value="China">
+          <option value="Brazil">
+          <option value="U.S">
+        </datalist><br>
+        
+            <label>TextArea</label>
+            <textarea name="textarea"  cols="30" rows="10"></textarea><br>
+        <label for ="phone number">Phone number: </label>
+        <input type="tel" placeholder ="Enter your  Phone number"maxlength="10" size="30"><br>  
+        <label for="datemax">Enter a date before 1980-01-01:</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+        <label for="datemin">Enter a date after 2000-01-01:</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+        <label for="quantity">Quantity (between 1 and 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5"><br>
+        <label for="files">Select files:</label>
+        <input type="file" id="files" name="files" multiple><br>
+        <label for="country_code">Country code:</label>
+  <input type="text" id="country_code" name="country_code"
+  pattern="[A-Za-z]{3}" title="Three letter country code"><br>
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required><br>
+  <label for="points">Points:</label>
+  <input type="number" id="points" name="points" step="3"><br>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" autofocus><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br>
+
+      
+        </fieldset>
+        
+        <label>Please click on checkbox if you are agreed to this </label>
+        <!-- input restrictions : checked , disabled ,max ,maxlength ,min ,pattern,readonly ,required ,size ,step ,value -->
+        <input type = "checkbox" disabled><br>
+        <h3>Enter the result</h3>
+       
+        <input type="Submit">
+        
+    </form>
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" id="a" value="50">
+        +<input type="number" id="b" value="25">
+        =<output name="x" for="a b"></output>
+        </form>
+        
+</body>
+</html>
